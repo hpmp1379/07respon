@@ -5,4 +5,17 @@
 body { 
     font-family: 'Noto Sans KR', '맑은 고딕', Helvetica, Arial, sans-serif; 
     color: #333;
+    line-height: 1.45;
+    font-size: 14px;
 }
+
+/* ~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~ */
+.header_container {}
+
+
+/* ~~~~~~~~~~~~~ visual ~~~~~~~~~~~~~~ */
+.visual {}
+
+/* ~~~~~~~~~~~~~  main  ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~  sns   ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~ */
