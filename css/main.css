@@ -2,20 +2,101 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
 
-body { 
-    font-family: 'Noto Sans KR', '맑은 고딕', Helvetica, Arial, sans-serif; 
-    color: #333;
-    line-height: 1.45;
-    font-size: 14px;
+.main_container {}
+
+/* ~~~~~~~~~~~~~  search  ~~~~~~~~~~~~~~ */
+.search_wrap {
+
+}
+.search {
+    position: relative;
+    top: -25px;
+    width: 650px;
+    margin: auto;
+    border: 1px solid #000;
+    border-radius: 100px;
+    background: #fff;
+}
+.search ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 30px;
+}
+.search li { position: relative;}
+.search li::before {
+    display: block;
+    content:"";
+    width: 1px; height: 30px;
+    position: absolute;
+    left: -25px; top: -3px;
+    width: 1px; height: 30px;
+    background: #ccc;
+}
+.search li:first-child::before { display: none;}
+.search li a {}
+
+
+/* ~~~~~~~~~~~~~  service   ~~~~~~~~~~~~~~ */
+.service_wrap {}
+.service {
+    width: 1092px; margin: auto;
+}
+.service:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.service .item {
+    float: left;
+    padding: 0 8px;
+}
+.service_item1 {
+    width: 50%;
+}
+.service_right_wrap {
+    float: left;
+    width: 50%;
+}
+.service_item2 { width: 50%;}
+.service_item3 { width: 50%;}
+.service_item4 {
+    margin-top: 30px;
 }
 
-/* ~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~ */
-.header_container {}
-
-
-/* ~~~~~~~~~~~~~ visual ~~~~~~~~~~~~~~ */
-.visual {}
-
-/* ~~~~~~~~~~~~~  main  ~~~~~~~~~~~~~~ */
+.service img {
+    max-width: 100%;
+}
 /* ~~~~~~~~~~~~~  sns   ~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~ */
+.sns_wrap {
+    padding: 50px 0;
+    margin-top: 70px;
+    background: #ccc;
+}
+.sns {
+    width: 1092px; margin: auto;
+}
+.sns h3 {
+    font-size: 25px;
+}
+
+.sns .item_wrap::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.sns .item {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+.sns .item a {
+    display: block;
+    margin: 10px 0;
+}
+.sns .thumb {
+    border: 1px solid red;
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+}
+.sns .thumb img { width: 100%;}

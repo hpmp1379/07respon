@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeXeN Tire Tech</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/visual.css">
     <script src="https://kit.fontawesome.com/ea416fc906.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="js/main.js"></script>
@@ -16,34 +18,178 @@
     <div class="header_container">
         <header>
             <div class="header_main">
-                <h1></h1>
-                <button class="trigger"></button>
+                <h1><a href="index.html">타이어테크</a></h1>
+                <button class="trigger">
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                    <span class="icon_bar"></span>
+                </button>
                 <div class="gnb">
-
+                    <div class="navbar">
+                        <ul class="navbar_gnb">
+                            <li><a href="#">상품 안내</a></li>
+                            <li><a href="#">매장 안내</a></li>
+                            <li><a href="#">고객 센터</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">타이어테크 소개</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
     </div>
 
     <div class="visual">
-        <img src="" alt="">
+        <img src="img/keyvisual2.jpg" alt="pc용 메인 비쥬얼" class="visual_pc">
+        <img src="img/m_keyvisual.jpg" alt="모바일용 메인 비쥬얼" class="visual_m">
     </div>
 
     <div class="main_container">
         <div class="search_wrap">
-
+            <div class="search">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/find_01.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/find_02.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/find_03.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
         </div>
         <div class="service_wrap">
-
+            <div class="service"> 
+                <!--item end-->
+                <div class="service_item1 item">
+                    <a href="#">
+                        <img src="img/block3_01.png" alt="타이어테크 매장찾기">
+                    </a>
+                </div>
+                <!--item right-->
+                <div class="service_right_wrap">
+                    <div class="service_item2 item">
+                        <a href="#">
+                            <img src="img/block3_02.png" alt="고객문의">
+                        </a>
+                    </div>
+                    <div class="service_item3 item">
+                        <a href="#">
+                            <img src="img/block3_03.png" alt="이벤트">
+                        </a>
+                    </div>
+                </div>
+                <!-- item end -->
+                <div class="service_item4 item">
+                    <a href="#">
+                        <img src="img/block3_04.png" alt="타이어테크 소개">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="sns_wrap">
-
+        <div class="sns">
+            <h3>Facebook</h3>
+            <div class="item_wrap">
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns01.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns02.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns03.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns04.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns05.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns06.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns07.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <span class="thumb">
+                            <img src="img/sns08.jpg" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer_wrap">
-        <footer></footer>
+        <footer>
+            <div class="logo">
+                <img src="img/footer_logo.png" alt="푸터 로고">
+            </div>
+            <div class="info">
+                경상남도 양산시 충렬로 355 넥센타이어 주식회사<br>
+                대표번호 055 370 5114 | 대표이메일 <a href="mainto:nexentire@nexentire.com">nexentire@nexentire.com</a><br>
+                Copyright ⓒ 2017 NEXEN TIRE. all rights reserved. 
+            </div>
+            <div class="family_site_wrap">
+                <select name="family" id="family_site">
+                    <option value="">Family Site</option>
+                    <option value="">넥센타이어 계열사1</option>
+                    <option value="">넥센타이어 회사1</option>
+                    <option value="">넥센타이어 증권</option>
+                    <option value="">Nexen International</option>
+                    <option value="">넥센타이어 메인</option>
+                    <option value="">넥센타이어 계열사2</option>
+                    <option value="">넥센타이어 회사2</option>
+                </select>
+            </div>
+            <div class="link_wrap">
+                <a href="#">이용약관</a>&nbsp; | &nbsp;
+                <a href="#">개인정보처리방침</a>&nbsp; | &nbsp;
+                <a href="#">이메일무단수집거부</a>
+            </div>
+        </footer>
     </div>
 
 </body>
