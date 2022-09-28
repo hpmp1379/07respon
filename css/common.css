@@ -38,7 +38,7 @@ header h1 a {
 .trigger {display: none;}
 .trigger .icon_bar {}
 
-.gnb { border: 1px solid red}
+.gnb{}
 .navbar {}
 .navbar_gnb {
     margin-left: 163px;
@@ -46,7 +46,6 @@ header h1 a {
 }
 .navbar_gnb > li {
     display: inline-block;
-    border: 1px solid green;
 }
 .navbar_gnb > li > a {
     display: block;
@@ -80,7 +79,7 @@ header h1 a {
     z-index: 100;
 }
 
-@media (max-width:1169px){
+@media (max-width:1169px){ /*--------------- @media 1169px -------------*/
     header {
         position: relative;
         width: auto;

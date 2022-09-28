@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/* subpage 상품안내 PRODUCT --------------------- */
+.product_container {
+    margin-bottom: 100px;
+}
+.container {
+    width: 1092px;
+    margin: auto;
+    padding: 0 20px;
+}
+@media (max-width:1191px){
+    .container {width: 952px;}
+}
+@media (max-width:991px){
+    .container {width: 712px;padding: 0 6px;}
+}
+@media (max-width:991px){
+    .container{width: 712px;padding: 0 6px;}
+}
+@media (max-width:768px){
+    .container{width: 100%;padding: 0 20px;}
+}
+
+.keyVisual {
+    height: 170px;
+    background: #eee;
+}
+.keyVisual .title {
+    position: absolute; 
+    top: 70px;
+    width: 100%;
+    text-align: center;
+}
+.keyVisual h1 {
+    font-size: 48px; font-weight: 500;
+    color: inherit;
+}
+.keyVisual .visual {
+    display: table-cell;
+    height: 170px;
+    vertical-align: bottom;
+}
+.keyVisual .visual img{
+    max-width: 100%;
+}
+
+.sub_nav {
+    border-bottom: 1px solid #ccc;
+}
+.sub_nav table {
+    margin: auto;
+}
+.sub_nav table td {
+    padding: 0 20px;
+}
+.sub_nav table td a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    color: #777;
+}
+.sub_nav table td.active a{
+    position: relative;
+    color: #a4f;
+    margin-bottom: -3px;
+    border-bottom: 1px solid #a3f;
+    font-weight: 500;
+}
+.sub_nav table td.active a::after{
+    position: absolute;
+    left: calc(50% - 11px); /* 11 is half of width */
+    bottom: -8px;
+    content: "";
+    width: 22px; height: 5px;
+    background: url('../img/icon_snb_arr.png');
+}
+
+
+@media(max-width:991px){
+    .sub_nav table { width: 100%;}
+    .sub_nav table td {padding: 0 10px;}
+}
+@media(max-width:768px){
+    .sub_nav {display: none;}
+}
+
+.content_wrap {}
+.product_cont {
+    margin-top: 40px;
+}
+
+.product_title {
+    position: relative;
+    margin: 70px 0 10px 0;
+}
+.product_title .title{
+    color: #444;
+    line-height: 1.5;
+}
+.product_title .title strong {
+    display: block;
+    font-size: 35px;
+}
+.product_title .title span {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.product_title .sns_btn {
+    position: absolute;
+    right: 0; top: 0;
+}
+.product_title .sns_btn a {
+    padding-left: 3px;
+}
+.product_title .sns_btn a::before {
+    display: inline-block;
+    content: '';
+    width: 1px; height: 13px;
+    background: #ccc;
+    margin-right: 3px;
+}
+.product_title .sns_btn a:first-child::before {
+    display: none
+}
+
+@media(max-width:991px){
+    /* .product_title {margin: 70px 0 10px 0;} */
+    .product_title .title strong {font-size: 24px;}
+    .product_title .sns_btn img {height: 22px;}
+    .product_title .share_print {display: none;}
+}
+@media(max-width:768px){
+    .product_title .title span {font-size: 14px;}
+}
+
+.title_images {}
+.title_images img {max-width: 100%;}
+
+.find_btn_wrap {padding-top: 50px; text-align: center;}
+.btn_purple {
+    background: #fff;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: 1px solid #a3f;
+    cursor: pointer;
+}
+
+/* ------------------------------ PRODUCT 2 .CSS --------------------------------- */
+.product_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.product {
+    /* border: 1px solid red; */
+    width: calc(33.33% - 15px); height: 420px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product_texts {
+    width: 100%;
+    /* outline: 5px solid green; */
+    padding: 30px;
+}
+.product_texts h4 {
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.product_texts img {
+    width: 100%;
+    margin-top: 10px;
+}
+.product_texts ul {
+    margin-top: 20px;
+}
+.product_texts ul li {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2;
+}
+.product_texts ul li::before {
+    content: '';
+    display: inline-block;
+    width: 3px; height: 3px;
+    border-radius: 50%;
+    background: #a3f;
+}
+
+.product_image {
+    height: 170px;
+    overflow:hidden;
+}
+
+.product_btn_wrap {
+    width: 100%;
+    padding: 0 30px;
+}
+.product_btn_wrap button {
+    width: 100%;
+    border: none;
+    background: #a3f;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align-last: left;
+    padding-left: 10px;
+}
+/* .product_btn_wrap button::after {} */
